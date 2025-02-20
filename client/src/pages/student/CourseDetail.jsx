@@ -292,7 +292,7 @@ const CourseDetail = () => {
               {course.lectures.map((lecture, idx) => (
                 <div key={idx} className="flex items-center gap-3 text-sm">
                   <span>
-                    {purchased || lecture.accessible || true ? <PlayCircle size={14} /> : <Lock size={14} />}
+                    {purchased || lecture.accessible ? <PlayCircle size={14} /> : <Lock size={14} />}
                   </span>
                   <p>{lecture.lectureTitle}</p>
                 </div>
